@@ -10,6 +10,65 @@
   </head>
   
   <body>
+	
+	<form class="popup">
+		<div class="popup-container">
+	
+			<button class="popup-close" type="button">
+				<span class="hidden">Закрыть окно</span>
+			</button>
+	
+			<div class="feedback">
+				
+				<div class="feedback-wrapper">
+					<h2 class="feedback-title">Ваш фидбек</h2>
+				</div>
+				
+				<div class="feedback-form">
+
+					<div class="form-row form-list">
+						<label class="form-group">
+							<span class="form-hint">Как часто вы заходите на сайт?</span>
+							<select class="select">
+								<option selected>Почти каждый день</option>
+								<option>Раз в несколько дней</option>
+								<option>Раз в несколько недель</option>
+								<option>Несколько раз в год</option>
+							</select>
+						</label>
+					</div>
+					
+					<div class="form-row form-radio">
+						<span>Вы подписаны на e-mail рассылку?</span>
+						<div class="radio-form">
+							<label class="radio-group">
+								<input type="radio" class="radio" name="radio-group" required>
+								<span class="radio-group-text">Да</span>
+							</label>
+							<label class="radio-group">
+								<input type="radio" class="radio" name="radio-group" required>
+								<span class="radio-group-text">Нет</span>
+							</label>
+						</div>
+					</div>
+			
+					<div class="form-group form-field">
+						<label class="field-group">
+							<span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+							<textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
+						</label>
+					</div>
+			
+					<div class="form-row">
+						<button class="feedback-button">Отправить</button>
+					</div>
+		
+				</div>
+		
+			</div>
+
+		</div>
+	</form>
   
 	<header>
     
@@ -98,7 +157,9 @@
 					витамина С в лимонах?</a></h3>
 				</div>
 			  </article>
+			  
 			</div>
+
 		</section>
 
 		<div class="content">
@@ -106,7 +167,7 @@
 			<main class="main">
 		
 			  <article class="article">
-				<img src="images/last-post1.jpg" class="article-image" alt="Человек идёт вдоль берега">
+				<img src="images/last-post1.jpg" class="article-image" alt="Человек идёт вдоль берега">	
 				<div class="article-content">                 
 				  <ul class="article-tags">
 					<li class="article-tag"><a href="#">travel</a></li>
@@ -312,6 +373,12 @@
 							<source 
 							srcset="images/shop-item-desk1.jpg"
 							media="(min-width: 1200px)">
+							<source
+							srcset="images/shop-item-tablet1.jpg"
+							media="(min-width: 641px)">
+							<source
+							srcset="images/shop-item-mobile1.jpg"
+							media="(max-width: 640px)">
 							<img class="product-img" src="images/shop-item-desk1.jpg" alt="Фото Подушки">
 						</picture>
 					</div>
@@ -349,6 +416,12 @@
 							<source 
 							srcset="images/shop-item-desk2.jpg" 
 							media="(min-width: 1200px)">
+							<source
+							srcset="images/shop-item-tablet2.jpg"
+							media="(min-width: 641px)">
+							<source
+							srcset="images/shop-item-mobile2.jpg"
+							media="(max-width: 640px)">
 							<img class="product-img" src="images/shop-item-desk2.jpg" alt="Фото игрушечного Зайчика">
 						</picture>
 					</div>
@@ -383,6 +456,12 @@
 							<source 
 							srcset="images/shop-item-desk3.jpg" 
 							media="(min-width: 1200px)">
+							<source
+							srcset="images/shop-item-tablet3.jpg"
+							media="(min-width: 641px)">
+							<source
+							srcset="images/shop-item-mobile3.jpg"
+							media="(max-width: 640px)">
 							<img class="product-img" src="images/shop-item-desk3.jpg" alt="Фото рамки">
 						</picture>
 					</div>
