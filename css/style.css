@@ -161,7 +161,7 @@ form.popup {
   display: flex;
   flex-direction: row;
 
-  margin-top: 8px;
+  margin-top: 10px;
 } 
 
 .radio-group:last-child {
@@ -664,7 +664,7 @@ h4:hover a {
 li.tag-list-item {
   padding: 6px 13px;
   margin-right: 7px; 
-  margin-bottom: 2px; 
+  margin-bottom: 3px; 
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -1217,7 +1217,7 @@ a.social-icon {
   .product-card {
     display: flex;
     align-items: center; 
-    width: 46%; 
+    width: calc(50% - 35px);
   }
 
   .product-card:nth-child(2n+1) {
@@ -1271,59 +1271,351 @@ a.social-icon {
   .socials {
     margin-bottom: 40px;
   }
+  
 
-}
+  @media (orientation: landscape) {
 
-
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
-
-  .trends-image {
-    box-sizing: border-box;
-    width: calc(50% - 3px);
-    min-height: 247px;
-    margin-bottom: 4px;
-    padding: 75px 20px 15px;
+    .trends-image {
+      box-sizing: border-box;
+      width: 24.8%;
+      min-height: 247px;
+      padding: 75px 20px 15px;
+    }
+  
+    .trends-description { 
+      padding: 30px 15px;
+    }
   }
 
-  .trends-description { 
-    padding: 30px;
-  }
-}
+  @media (orientation: portrait) {
 
-@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-
-  .trends-image {
-    box-sizing: border-box;
-    width: 24.8%;
-    min-height: 247px;
-    padding: 75px 20px 15px;
+    .trends-image {
+      box-sizing: border-box;
+      width: calc(50% - 2px);
+      min-height: 247px;
+      margin-bottom: 4px;
+      padding: 75px 20px 15px;
+    }
+  
+    .trends-description { 
+      padding: 30px;
+    }
   }
 
-  .trends-description { 
-    padding: 30px 15px;
-  }
 }
 
 
 @media (max-width: 640px) {
 
+  .popup-close {
+    width: 30px;
+    height: 30px;
+
+    top: -5.5vh;
+  }
+
+  .popup-container {
+    max-width: 330px;
+    width: 100%;
+    max-height: 545px;
+    position: fixed;
+  }
+
+  .feedback {
+    padding: 29px 20px;
+  }
+
+  .feedback-title {
+    font-size: 16px;
+  }
+
+  .form-list, .form-radio {
+    margin-bottom: 33px;
+  }
+
+  .radio-group {
+    margin-right: 35px;
+  } 
+
+  .radio-group-text::before {
+    content: "";
+    height: 26px;
+    width: 26px;
+    background-size: 26px;
+    margin-right: 7px;
+  }
+
+  .form-field {
+    margin-bottom: 25px;
+  }
+
+  .field-label {
+    margin-bottom: 12px;
+  }
+
+  .textarea {
+    min-height: 100px;
+    max-height: 132px;
+    height: 100%;
+    min-width: 145px;
+    max-width: 290px;
+    padding: 21px;
+  }
+
   .menu-button {
     display: block;
     margin-left: auto;
     transform: translate(0px, 10px);
+    margin-bottom: 175px;
+  }
+
+
+  header {
+    background-image: url(../images/banner-mobile.jpg);
+    padding: 35px 25px 210px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .logo {
+    width: 270px;
   }
 
   .menu-list {
     display: none;
   }
 
-}
+  .title {
+    font-size: 26px;
+    line-height: 1.4;
+    margin-top: 45px;
+  }
 
 
-@media (max-width: 640px) and (orientation: portrait) {
+  .page {
+    padding-top: 40px; 
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
 
-}
 
-@media (max-width: 640px) and (orientation: landscape) {
+  .trends-title {
+    font-size: 16px;
+  }
+
+  .trends-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    opacity: 0.4;
+  }
+
+  .trend-item-description {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+
+  .content {
+    flex-wrap: wrap;
+    padding: 45px 15px;
+  }
+
+  .main {
+    padding-bottom: 40px;
+  }
+
+  .article {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #eeeeee;
+    max-width: 100vw;
+  }
+
+  .article:last-child {
+    margin-bottom: 0;
+  }
+
+  .article-image {
+    max-width: 100vw;
+    width: 100%;
+  } 
+
+  .article-tags {
+    margin-top: 16px;
+  }
+
+  .article-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .article-information {
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: 14px; 
+    line-height: 1.4;
+  }
+
+
+  .other-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .posts-content-title h3 {
+    font-size: 16px;
+  }
+
+  .search-group, .news-group {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .search-field {
+    flex-grow: 1;
+  }
+
+  .search-button {
+    flex-grow: 0;
+  }
+
+  li.tag-list-item {
+    margin-bottom: 6px; 
+  }
+
+
+  .shop {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 640px;
+    width: calc(95% - 6px);
+    
+    padding: 0 27px 45px;
+    margin: 0 auto;
+  }
+
+  .shopping-group {
+    justify-content: center;
+  }
+  
+  .shop-title {
+    font-size: 16px;
+  }
+
+  .shop-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    opacity: 0.4;
+  }
+
+  .product-card, .product-picture, .product-img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .product-img {
+    height: 100%;
+  }
+
+  .product-card:nth-child(n+2) {
+    margin-top: 50px;
+  } 
+
+  .product-description-card {
+    display: block;
+    
+    width: 100%;
+    padding: 25px 0 10px;
+
+    margin-top: -10px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    outline-offset: 23px;
+  }
+
+  .product-title {
+    font-size: 17px;
+  }
+
+
+  .socials {
+    margin-bottom: 50px;
+  }
+
+
+  @media (orientation: portrait) {
+
+    .trends-block {
+      flex-direction: column;   
+    }
+
+    .trends-image:last-child {
+      margin-bottom: 0;
+    }
+
+    .trends-image {
+      width: 100%;
+      margin-bottom: 3px;
+      padding: 90px 15px 15px;
+    }
+  
+    .trends-description {
+      padding: 33px 19px 25px;
+    }
+
+  }
+
+  @media (orientation: landscape) {
+
+    .trends-block {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+  
+    .trends-image {
+      box-sizing: border-box;
+      width: calc(50% - 2px);
+      min-height: 247px;
+      margin-bottom: 4px;
+      padding: 75px 20px 15px;
+    }
+  
+    .trends-description { 
+      padding: 30px;
+    }
+  
+  }
 
 }
