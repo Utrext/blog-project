@@ -25,9 +25,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   width: 100%;
-  min-width: 400px;
+  /*min-width: 400px;*/
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 a {
