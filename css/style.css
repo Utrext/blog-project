@@ -18,11 +18,16 @@
   font-style: normal;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   width: 100%;
   min-width: 400px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -410,6 +415,7 @@ ul.article-tags {
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 90px;
+  
 }
 
 .content {
@@ -420,6 +426,7 @@ ul.article-tags {
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px 15px;
+  
 }
 
 .article {
@@ -1025,7 +1032,7 @@ a.social-icon {
     width: 27px;
     height: 27px;
 
-    top: -3.9vh;
+    top: -33px;
   }
 
   .popup-container {
@@ -1277,14 +1284,16 @@ a.social-icon {
 
     .trends-image {
       box-sizing: border-box;
-      width: 24.8%;
+      width: calc(50% - 2px);
       min-height: 247px;
+      margin-bottom: 4px;
       padding: 75px 20px 15px;
     }
   
     .trends-description { 
       padding: 30px 15px;
     }
+  
   }
 
   @media (orientation: portrait) {
@@ -1300,6 +1309,7 @@ a.social-icon {
     .trends-description { 
       padding: 30px;
     }
+
   }
 
 }
@@ -1311,7 +1321,7 @@ a.social-icon {
     width: 30px;
     height: 30px;
 
-    top: -5.5vh;
+    top: -35px;
   }
 
   .popup-container {
@@ -1323,6 +1333,7 @@ a.social-icon {
 
   .feedback {
     padding: 29px 20px;
+    overflow-y: scroll;
   }
 
   .feedback-title {
@@ -1403,7 +1414,7 @@ a.social-icon {
     padding-top: 40px; 
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 40px;
+    padding-bottom: 40px; 
   }
 
 
@@ -1431,10 +1442,12 @@ a.social-icon {
   .content {
     flex-wrap: wrap;
     padding: 45px 15px;
+    
   }
 
   .main {
     padding-bottom: 40px;
+    
   }
 
   .article {
@@ -1443,7 +1456,6 @@ a.social-icon {
     margin-bottom: 40px;
     padding-bottom: 23px;
     border-bottom: 1px solid #eeeeee;
-    max-width: 100vw;
   }
 
   .article:last-child {
@@ -1451,7 +1463,6 @@ a.social-icon {
   }
 
   .article-image {
-    max-width: 100vw;
     width: 100%;
   } 
 
