@@ -1281,6 +1281,11 @@ a.social-icon {
 
   @media (orientation: landscape) {
 
+    .feedback {
+      max-height: 58vh;
+      overflow: auto;
+    }
+
     .trends-image {
       box-sizing: border-box;
       width: calc(50% - 2px);
@@ -1586,6 +1591,10 @@ a.social-icon {
 
   @media (orientation: portrait) {
 
+    .feedback {
+      max-height: 90vh;
+    }
+
     .trends-block {
       flex-direction: column;   
     }
@@ -1607,6 +1616,11 @@ a.social-icon {
   }
 
   @media (orientation: landscape) {
+
+    .feedback {
+      max-height: 84vh;
+      overflow: auto;
+    }
 
     .trends-block {
       flex-wrap: wrap;
